@@ -9,7 +9,7 @@
    <h1>Привіт, роботяги з Уманської, 12 )))</h1>
    <br>
    <ul>
-      <li><img id="image1" src="./images/bw-car.jpg" width="480" alt="er" onClick="imgsrc1();"></li>
+      <li><img id="image1" src="./images/bw-car.jpg" width="480" alt="er" onClick="im1();"></li>
       <li><img id="image2" src="./images/bw-ins.jpg" width="480" alt="re" onClick="imgsrc2();"></li>
    </ul>
    <script language="javascript">
@@ -20,6 +20,16 @@
       }
       function imgsrc2() {
          image2.src = "./images/color-ins.jpg";
+         console.log("it work");
+         console.log(image1.src);
+       }
+
+      function im1(){
+         if (image1.src == "./images/bw-car.jpg"){
+            console.log(image1.src);}
+         // } else {
+         //    image1.src = "./images/bw-car.jpg";
+         // }
        }
    </script>
 </body>
