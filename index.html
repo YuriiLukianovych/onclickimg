@@ -9,8 +9,19 @@
    <h1>Привіт, роботяги з Уманської, 12 )))</h1>
    <br>
    <ul>
-      <li><img src="./images/bw-car.jpg" alt=""></li>
-      <li><img src="./images/bw-ins.jpg" alt=""></li>
+      <li><img id="image1" src="./images/bw-car.jpg" alt="er" onClick="imgsrc1();"></li>
+      <li><img id="image2" src="./images/bw-ins.jpg" alt="re" onClick="imgsrc2();"></li>
    </ul>
+   <script language="javascript">
+      var i = 0;
+      var image1 = document.getElementById("image1");
+      var image2 = document.getElementById("image2");
+      function imgsrc1() {
+         image1.src = "./images/color-car.jpg";
+      }
+      function imgsrc2() {
+         image2.src = "./images/color-ins.jpg";
+       }
+   </script>
 </body>
 </html>
